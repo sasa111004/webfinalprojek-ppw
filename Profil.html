@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Universitas Amikom Yogyakarta</title>
+    <link rel="stylesheet" href="styleprofil.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="Logo"></div>
+        <img src="logo amikom.jpeg" alt="Logo Universitas ABC" />
+        <div class="navbar">
+            <a href="index.html">Beranda</a>
+      <a href="Profil.html">Profil</a>
+      <a href="visimisi.html">Visi Misi</a>
+      <a href="fakultas.html">Fakultas</a>
+      <a href="beasiswa.html"> Beasiswa</a>
+      <a href="pmb.html">PMB</a>
+          </div>
+      </nav>
+    </header>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slideshow Gambar</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+          }
+
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+
+          .slides {
+            display: none;
+            width: 100%;
+          }
+
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          .dot-container {
+            text-align: center;
+            padding: 10px;
+            background: #1b0a51;
+          }
+
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          .active,
+          .dot:hover {
+            background-color: #717171;
+          }
+
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+
+          @keyframes fade {
+            from {
+              opacity: 0.4;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="slideshow-container">
+          <!-- Slides -->
+          <div class="slides fade">
+            <img src="6.jpg" style="width: 100%" />
+          </div>
+          <div class="slides fade">
+            <img
+              src="5.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="slides fade">
+            <img src="4.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Navigation -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </body>
+    </html>
+
+            <section class="profile">
+                <h2>Profil Singkat Universitas Amikom Yogyakarta</h2>
+          <p>
+            Universitas Amikom Yogyakarta merupakan perubahan dari Sekolah Tinggi
+            Manajemen Informatika dan Komputer Amikom Yogyakarta. Sebelumnya Sekolah
+            Tinggi Manajemen Informatika dan Komputer Amikom Yogyakarta, merupakan
+            perubahan dari Akademi Manajemen Informatika dan Komputer Amikom
+            Yogyakarta yang mendapatkan status terdaftar berdasarkan Surat Keputusan
+            Menteri Pendidikan dan Kebudayaan Republik Indonesia No. 084/D/O/1994
+            tanggal 11 Oktober 1994. Perubahan bentuk ini dilakukan untuk
+            mempermudah mencapai visinya sebagai perguruan tinggi unggulan dunia
+            dalam bidang ekonomi kreatif berbasis entrepreneurship.
+          </p>
+        </div>
+      </section>
+    <section class="profile">
+      
+      
+<h2 class="video-title"></h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/R6NqHIZuVgA?si=N6rPZqdFcYXzdjRa" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </p>
+      <div class="row">
+      <div class="leftcolumn"> 
+        <div class="card">
+          <img src="2.jpg" alt="Prestasi" />
+          <div class="card-content">
+            <h2>Prestasi</h2>
+            <p>
+              Universitas Amikom Yogyakarta juga telah meraih 80 penghargaan internasional dan lebih dari 210 penghargaan nasional serta menghasilkan 24% lulusannya sebagai pengusaha (Business Placement Center AMIKOM, 2014). 
+              Perguruan Tinggi telah terakreditasi institusi B dan telah mendapatkan sertifikasi ISO 2009.
+              <br />
+              Universitas Amikom Yogyakarta mempunyai peranan yang besar dalam dunia pendidikan sebagai pusat pengembangan ekonomi kreatif untuk 
+              meningkatkan daya saing bangsa, telah membuktikan mampu mengatasi berbagai kesulitan dan hambatan dalam pengelolaannya.
+              <br />
+              Amikom Creative Economy Park (ACEP) yang telah bekerjasama dennen perusahaan di Silicon Valley dan Hollywood menjadika peluang baru bagi mahasiswa untuk melakukan internship dan 
+              bagi alumni untuk bekerja di Silicon Valley dan Hollywood.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="leftcolumn"> 
+        <div class="card">
+          <img src="3.jpg" alt="Prestasi" width="500" 
+        height="400" 
+ />
+          <div class="card-content">
+            <h2>Prestasi</h2>
+            <p>
+              Pada 2019, Universitas Amikom Yogyakarta menurut QS Stars dalam Computer Science and Information 
+              Systems merupakan Perguruan Tinggi Swasta Rating Terbaik di Indonesia.
+              <br />
+              Pada masa mendatang, Universitas Amikom berkeinginan untuk tetap lebih maju sesuai dengan jaman dan tantangannya yang terus berubah. 
+              Oleh karenanya dengan semakin berkembang dan dewasanya Universitas Amikom Yogyakarta serta kebutuhan untuk memenuhi kepercayaan masyarakat 
+              dan tuntutan perubahan jaman yang sulit diprediksi, diperlukan strategi dan sasaran pengembangan yang terencana, sistematis dan terukur.
+              <br />
+              Dengan memanfaatkan berbagai keunggulan strategis yang dimiliki secara optimal, evaluasi kondisi saat ini serta berpijak pada visi dan 
+              misi Universitas Amikom Yogyakarta, maka perlu disusun sebuah rencana strategis yang akan memberikan arah serta menjadi acuan bagi 
+              Universitas Amikom Yogyakarta dalam perjalanan kedepan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<title>Embed Google Map</title>
+    <style>
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 500px; /* Atur tinggi peta sesuai kebutuhan Anda */
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lokasi Kami</h1>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.281890327113!2d110.40647117501928!3d-7.759899576956457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversitas%20Amikom%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719571610629!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+  </main> 
+  <footer>
+<div class="footer-top">
+<div class="footer-content">
+<div class="footer-section contact-info">
+   <img src="yu.png" alt="Logo Amikom Kecil"  width="250px" height="90px">
+  <h4>Diselenggarakan oleh</h4>
+  <p>Yayasan Amikom Yogyakarta</p>
+  <p>Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta 55283</p>
+  <p>Email: Yayasan@amikom.ac.id</p>
+  <p>Email: amikom@amikom.ac.id</p>
+  <p>Telp: (0274) 884201 – 207</p>
+  <p>Fax: (0274) 884208</p>
+</div>
+<div class="footer-section international-office">
+  <h4>INTERNATIONAL OFFICE</h4>
+  <p>Email: io@amikom.ac.id</p>
+  <p>Telp: +62 274884 201 Ext. 612</p>
+  <p>Fax: +62 274884 208</p>
+</div>
+<div class="footer-section links">
+  <h4>Menu</h4>
+  <ul>
+    <li><a href="pmb.html">Pendaftaran</a></li>
+    <li><a href="profil.html">Profil Amikom</a></li>
+    <li><a href="auth.html">Login</a></li>
+    <li><a href="dosen.html">Dosen</a></li>
+    <li><a href="elearning.html">E-Learning</a></li>
+    <li><a href="wisuda.html">Wisuda</a></li>
+    <li><a href="repository.html">Repository</a></li>
+  </ul>
+</div>
+<div class="footer-section social-media">
+  <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/share/FhpEHiUoZT3N8gZc/?mibextid=LQQJ4d">
+    <img src="98.jpg" alt="Facebook" class="social-icon"></a>
+  <a href="https://twitter.com/amikomjogja">
+    <img src="TOPTEC - on Twitter.jpg" alt="Twitter" class="social-icon"> </a>
+  <a href="https://www.instagram.com/amikomjogja">
+    <img src="76.jpg" alt="Instagram" class="social-icon"> </a>
+  <a href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber">
+    <img src="yt.jpg" alt="YouTube" class="social-icon"> </a>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>  UNIVERSITAS AMIKOM YOGYAKARTA </p>
+</div>
+</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

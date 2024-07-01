@@ -1,0 +1,186 @@
+/* style.css */
+
+/* Hero Section */
+
+.hero-section {
+    background: url('gambar8.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5em;
+}
+
+.hero-section .btn {
+    margin: 10px;
+}
+
+/* Custom Carousel */
+.carousel-item img {
+        height: 1000px;
+        width: 500px;
+        object-fit: cover;
+    filter: brightness(75%);
+}
+
+.carousel-caption h5 {
+    font-size: 1.5em;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+/* Accordions */
+.card-header {
+    background-color: rgb(91, 28, 150);
+    color: white;
+    cursor: pointer;
+}
+
+.card-header:hover {
+    background-color: blueviolet;
+}
+
+.card-body ul {
+    padding-left: 90px;
+}
+
+.card-body ul li {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* General Styles */
+h2 {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    
+}
+
+.my-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #5e0eb3;
+    /* Matches the dark blue background color */
+    color: white;
+    /* White text color */
+    font-family: 'Open Sans', sans-serif;
+    /* Font used on the Amikom page */
+    font-size: 16px;
+    /* Font size */
+}
+
+.footer-top {
+    padding: 80px 0;
+    /* Padding for spacing */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+        padding: 30px 0;
+        font-size: 16px;
+    border-top: 1px solid #bdc3c7;
+    background-color: #35146b;
+}
+
+
+/* Social media links */
+.footer-section.social-media a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.footer-section.social-media img.social-icon {
+    width: 24px;
+    /* Size of the icons */
+    height: 24px;
+    /* Ensure the images are square */
+    transition: transform 0.3s;
+    /* Add a hover effect */
+}
+
+.footer-section.social-media img.social-icon:hover {
+    transform: scale(1.2);
+    /* Scale up the icon on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #290d52;
+    padding: 15px 0;
+  }
+
+  .navbar a {
+    color: rgb(243, 238, 255);
+    text-decoration: none;
+    padding: 4px 10px;
+  }
+
+  .navbar a:hover {
+    background-color: #2d1351;
+  }

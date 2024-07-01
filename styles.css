@@ -1,0 +1,95 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full height layout */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+/* Gaya untuk Header */
+.header {
+    background-color: rgb(44, 29, 90) !important;
+    color: rgb(170, 137, 137) !important;
+    padding: 20px 0;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: white;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: auto;
+  }
+  
+
+/* Gaya untuk Konten Utama */
+main {
+    padding: 20px;
+}
+
+aside .list-group-item {
+    font-size: 1rem;
+}
+
+aside .list-group-item.active {
+    background-color: #6c1f45; /* Warna aktif sidebar sesuai website FIK Amikom */
+    border-color: #6c1f45;
+}
+
+/* Gaya untuk Accordion Fakultas */
+.accordion-item .card-header {
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.accordion-item .card-header:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-item h2 {
+    font-size: 1.5rem;
+}
+
+/* Gaya untuk Footer */
+footer {
+    background-color: #343a40; /* Warna footer sesuai website FIK Amikom */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+

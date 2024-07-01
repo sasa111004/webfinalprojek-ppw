@@ -1,0 +1,15 @@
+/* Custom Carousel */
+.carousel-item img {
+    height: 1000px;
+    width: 500px;
+    object-fit: cover;
+filter: brightness(75%);
+}
+
+.carousel-caption h5 {
+font-size: 1.5em;
+}
+
+.carousel-caption p {
+font-size: 1.2em;
+}

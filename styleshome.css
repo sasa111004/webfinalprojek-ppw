@@ -1,0 +1,172 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.jumbotron {
+    background-image: url('gambar8.jpg');
+    background-size: cover;
+    color: rgb(47, 30, 95);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.jumbotron h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.5rem;
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact .form-control {
+    margin-bottom: 15px;
+}
+
+/* Mengubah background navbar */
+.navbar {
+    background-color: #6a0dad; /* Warna ungu */
+}
+
+/* Mengubah warna teks navbar */
+.navbar .nav-link {
+    color: white; /* Warna putih untuk teks */
+    padding: 15px 20px; /* Mengubah ukuran kotak */
+    margin: 5px; /* Menambah margin antara kotak */
+    border-radius: 5px; /* Menambah border radius untuk membuat sudut membulat */
+    transition: background-color 0.3s ease; /* Menambah efek transisi */
+}
+
+/* Mengubah warna teks dan background saat hover */
+.navbar .nav-link:hover {
+    background-color: rgb(84, 26, 138); /* Warna lebih gelap saat hover */
+    color: #fff; /* Warna teks tetap putih */
+}
+
+/* Mengubah warna tombol toggler (untuk tampilan mobile) */
+.navbar-toggler {
+    border-color: white; /* Warna border putih */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Warna icon putih */
+}
+
+/* Mengubah warna background saat link aktif */
+.navbar .nav-link.active {
+    background-color: #4b0082; /* Warna lebih gelap untuk link aktif */
+}
+
+/* Footer styles */
+footer {
+    background-color: #5e0eb3;
+    /* Matches the dark blue background color */
+    color: white;
+    /* White text color */
+    font-family: 'Open Sans', sans-serif;
+    /* Font used on the Amikom page */
+    font-size: 16px;
+    /* Font size */
+}
+
+.footer-top {
+    padding: 80px 0;
+    /* Padding for spacing */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+        padding: 30px 0;
+        font-size: 16px;
+    border-top: 1px solid #bdc3c7;
+    background-color: #35146b;
+}
+
+
+/* Social media links */
+.footer-section.social-media a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.footer-section.social-media img.social-icon {
+    width: 24px;
+    /* Size of the icons */
+    height: 24px;
+    /* Ensure the images are square */
+    transition: transform 0.3s;
+    /* Add a hover effect */
+}
+
+.footer-section.social-media img.social-icon:hover {
+    transform: scale(1.2);
+    /* Scale up the icon on hover */
+}
+#events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Menyusun elemen secara vertikal */
+    text-align: center; /* Menyelaraskan teks di dalam elemen ke tengah */
+    height: 9vh; /* Mengatur tinggi section sesuai kebutuhan */
+}
+
+#events h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 2.5rem;
+    color: #4b0082; /* Warna teks */
+}

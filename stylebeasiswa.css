@@ -1,0 +1,137 @@
+body {
+    padding-top: 56px;
+  
+  }
+  
+  .header {
+    position: relative;
+    height: 60vh;
+    min-height: 300px;
+    background: url(halaman.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  
+  .header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .header .container {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .header .container h1,
+  .header .container p {
+    color: #fff;
+  }
+  
+  .card img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .card:hover{
+    transform:scale(1.07);
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #35146b;
+    color: #ffffff; /* Warna putih untuk teks */
+    padding: 15px 0;
+  }
+
+ /* Footer styles */
+footer {
+    background-color: #5e0eb3;
+    /* Matches the dark blue background color */
+    color: white;
+    /* White text color */
+    font-family: 'Open Sans', sans-serif;
+    /* Font used on the Amikom page */
+    font-size: 16px;
+    /* Font size */
+}
+
+.footer-top {
+    padding: 80px 0;
+    /* Padding for spacing */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+        padding: 30px 0;
+        font-size: 16px;
+    border-top: 1px solid #bdc3c7;
+    background-color: #35146b;
+}
+
+
+/* Social media links */
+.footer-section.social-media a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.footer-section.social-media img.social-icon {
+    width: 24px;
+    /* Size of the icons */
+    height: 24px;
+    /* Ensure the images are square */
+    transition: transform 0.3s;
+    /* Add a hover effect */
+}
+
+.footer-section.social-media img.social-icon:hover {
+    transform: scale(1.2);
+    /* Scale up the icon on hover */
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}

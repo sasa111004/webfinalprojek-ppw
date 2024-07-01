@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fakultas - Universitas Amikom Yogyakarta</title>
+    <link href="stylefakultas.css" rel="stylesheet">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #2e0a53;
+        color: rgb(37, 9, 37);
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      .header img {
+        max-width: 100px;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #290d52;
+        padding: 15px 0;
+      }
+
+      .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 4px 10px;
+      }
+
+      .navbar a:hover {
+        background-color: #2d1351;
+      }
+
+      .hero-content h1 {
+        font-size: 5rem; /* Menyesuaikan ukuran font untuk teks hero */
+        margin: 0; /* Menghilangkan margin default untuk h1 */
+      }
+
+      .hero-content p {
+        font-size: 1.5rem; /* Menyesuaikan ukuran font untuk paragraf */
+      }
+
+      .hero {
+        position: relative;
+        height: 300px;
+        background-image: url("your-background-image.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background: #3a075e;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 3rem; /* Menyesuaikan ukuran font untuk teks hero */
+        margin: 0; /* Menghilangkan margin default untuk h1 */
+      }
+
+      .hero-content p {
+        font-size: 1.5rem; /* Menyesuaikan ukuran font untuk paragraf */
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+
+      .card {
+        width: 30%;
+        background-color: #fcf9ff;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(61, 2, 86, 0.1);
+      }
+
+      .card img {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .card img.round {
+        border-radius: 100%; /* Tetap mempertahankan gambar lainnya berbentuk bulat */
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .card p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      /* Footer styles */
+footer {
+    background-color: #5e0eb3;
+    /* Matches the dark blue background color */
+    color: white;
+    /* White text color */
+    font-family: 'Open Sans', sans-serif;
+    /* Font used on the Amikom page */
+    font-size: 16px;
+    /* Font size */
+}
+
+.footer-top {
+    padding: 80px 0;
+    /* Padding for spacing */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    margin: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+
+.footer-bottom {
+    text-align: center;
+        padding: 30px 0;
+        font-size: 16px;
+    border-top: 1px solid #bdc3c7;
+    background-color: #35146b;
+}
+
+
+/* Social media links */
+.footer-section.social-media a {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.footer-section.social-media img.social-icon {
+    width: 24px;
+    /* Size of the icons */
+    height: 24px;
+    /* Ensure the images are square */
+    transition: transform 0.3s;
+    /* Add a hover effect */
+}
+
+.footer-section.social-media img.social-icon:hover {
+    transform: scale(1.2);
+    /* Scale up the icon on hover */
+}
+    </style>
+  </head>
+  <body>
+    <div class="Logo"></div>
+    <img src="logo amikom.jpeg" alt="Logo Universitas ABC" />
+    <div class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="Profil.html">Profil</a>
+      <a href="fakultas.html">Fakultas</a>
+      <a href="beasiswa.html"> Beasiswa</a>
+      <a href="pmb.html">PMB</a>
+    </div>
+
+    <head>
+        <title>Slideshow Gambar</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+          }
+
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+
+          .slides {
+            display: none;
+            width: 100%;
+          }
+
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+          .dot-container {
+            text-align: center;
+            padding: 10px;
+            background: #1b0a51;
+          }
+
+          .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          .active,
+          .dot:hover {
+            background-color: #717171;
+          }
+
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
+
+          @keyframes fade {
+            from {
+              opacity: 0.4;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="slideshow-container">
+          <!-- Slides -->
+          <div class="slides fade">
+            <img src="1.jpg" style="width: 100%" />
+          </div>
+          <div class="slides fade">
+            <img
+              src="fakultas-program-studi-universitas-amikom.jpg"
+              style="width: 100%"
+            />
+          </div>
+          <div class="slides fade">
+            <img src="semuafakultas.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Navigation -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </body>
+    </html>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Fakultas Universitas Amikom Yogyakarta</h1>
+        <p>Fakultas Unggulan untuk Pendidikan Berkualitas</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="card">
+        <img src="fik.png" alt="Foto Profil 1" />
+        <h2>Fakultas Ilmu Komputer</h2>
+        <p>
+          Fakultas Ilmu Komputer adalah salah satu fakultas dalam sebuah
+          universitas atau institusi pendidikan tinggi yang fokus pada
+          pengajaran dan penelitian di bidang ilmu komputer dan teknologi
+          informasi.
+          <li>
+            <a
+              href="https://fik.amikom.ac.id/page/struktur-organisasi"
+              target="_blank"
+              >Cek Selengkapnya...</a
+            >
+          </li>
+        </p>
+      </div>
+      <div class="card">
+        <img src="fes.png" alt="fes" />
+        <h2>Fakultas Ekonomi Sosial</h2>
+        <p>
+          Fakultas Ekonomi Sosial adalah salah satu fakultas di universitas atau
+          institusi pendidikan tinggi yang fokus pada studi dan penelitian di
+          bidang ekonomi dan ilmu sosial. Fakultas ini menggabungkan pemahaman
+          tentang ekonomi dengan perspektif sosial untuk memahami dan mengatasi
+          berbagai tantangan dalam masyarakat.
+          <li>
+            <a href="https://fes.amikom.ac.id/" target="_blank"
+              >Cek Selengkapnya...</a
+            >
+          </li>
+        </p>
+      </div>
+      <div class="card">
+        <img src="fst.png" alt="Fst" />
+        <h2>Fakultas Sains Teknologi</h2>
+        <p>
+          Fakultas Sains dan Teknologi adalah salah satu fakultas di universitas
+          atau institusi pendidikan tinggi yang fokus pada pengajaran dan
+          penelitian di bidang ilmu pengetahuan alam (sains) dan teknologi.
+          Fakultas ini bertujuan untuk menghasilkan lulusan yang kompeten dalam
+          ilmu pengetahuan dan teknologi serta mampu berkontribusi dalam
+          berbagai bidang industri dan penelitian
+          <li>
+            <a href="https://fst.amikom.ac.id/" target="_blank"
+              >Cek Selengkapnya...</a
+            >
+          </li>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+        <img src="fst.png" alt="Fst" />
+            <h2>Kelas Internasional Universitas Amikom</h2>
+            <h3>Bachelor Informatics</h3>
+            <h3>Bachelor Information Technology</h3>
+            <h3>Bachelor Information System</h3>
+            <h3>Bachelor Of Communication Science</h3>
+            <li><a href="https://home.amikom.ac.id/2021/09/05/info-beasiswa-kelas-internasional-2021-batch-2-universitas-amikom-yogyakarta/" target="_blank"
+            >Cek Selengkapnya...</a
+            >
+          </li>
+      </div>
+    </div>
+  </body>
+</html>
+
+<div class="card">
+  <img src="fst.png" alt="Fst" />
+  <h2>Kelas Internasional Universitas Amikom</h2>
+    <li><p><h2>Program Pascasarjana (S2)</h2></p></li>
+      <p>S2-Informatika</p>
+      <p>S2-PJJ Informatika</p>
+
+      <li><p><h2>Program Doctoral (S3)</h2></p></li>
+      <p>S3-Informatika</p>
+      <li><a href="https://pmbpasca.amikom.ac.id/ target="_blank"
+        >Cek Selengkapnya...</a
+        >
+      </li>
+</div>
+</div>
+</body>
+</html>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <img
+          src="yu.png"
+          alt="Logo Amikom Kecil"
+          width="250px"
+          height="90px"
+        />
+        <h4>Diselenggarakan oleh</h4>
+        <p>Yayasan Amikom Yogyakarta</p>
+        <p>
+          Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok,
+          Kab. Sleman, Prop. Daerah Istimewa Yogyakarta 55283
+        </p>
+        <p>Email: Yayasan@amikom.ac.id</p>
+        <p>Email: amikom@amikom.ac.id</p>
+        <p>Telp: (0274) 884201 – 207</p>
+        <p>Fax: (0274) 884208</p>
+      </div>
+      <div class="footer-section international-office">
+        <h4>INTERNATIONAL OFFICE</h4>
+        <p>Email: io@amikom.ac.id</p>
+        <p>Telp: +62 274884 201 Ext. 612</p>
+        <p>Fax: +62 274884 208</p>
+      </div>
+      <div class="footer-section links">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="pmb.html">Pendaftaran</a></li>
+          <li><a href="profil.html">Profil Amikom</a></li>
+          <li><a href="auth.html">Login</a></li>
+          <li><a href="dosen.html">Dosen</a></li>
+          <li><a href="elearning.html">E-Learning</a></li>
+          <li><a href="wisuda.html">Wisuda</a></li>
+          <li><a href="repository.html">Repository</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social-media">
+        <h4>Follow Us</h4>
+        <a
+          href="https://www.facebook.com/share/FhpEHiUoZT3N8gZc/?mibextid=LQQJ4d"
+        >
+          <img src="98.jpg" alt="Facebook" class="social-icon"
+        /></a>
+        <a href="https://twitter.com/amikomjogja">
+          <img
+            src="TOPTEC - on Twitter.jpg"
+            alt="Twitter"
+            class="social-icon"
+          />
+        </a>
+        <a href="https://www.instagram.com/amikomjogja">
+          <img src="76.jpg" alt="Instagram" class="social-icon" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+        >
+          <img src="yt.jpg" alt="YouTube" class="social-icon" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>UNIVERSITAS AMIKOM YOGYAKARTA</p>
+  </div>
+</footer>
+</body>
+</html>

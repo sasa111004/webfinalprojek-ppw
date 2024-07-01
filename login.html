@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Universitas Amikom Yogyakarta</title>
+    <link rel="stylesheet" href="stylelogin.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-box">
+        <img src="logo amikom.jpeg" alt="Amikom Logo" class="logo" />
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="text" id="npm" placeholder="NPM" required />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button type="submit">Login</button>
+          <p class="error" id="errorMessage">NPM atau Password salah</p>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js">
+      document.getElementById('loginForm').addEventListener('submit', function(event) {
+              event.preventDefault();
+              const npm = document.getElementById('npm').value;
+              const password = document.getElementById('password').value;
+
+              if (npm === 'your_npm' && password === 'your_password') {
+                  window.location.href = 'dashboard.html'; // Redirect to dashboard
+              } else {
+                  document.getElementById('errorMessage').style.display = 'block';
+              }
+          });
+    </script>
+  </body>
+</html>

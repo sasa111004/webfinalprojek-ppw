@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB Kampus</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="stylepmb.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Beranda</a>
+        <a href="Profil.html">Profil</a>
+        <a href="fakultas.html">Fakultas</a>
+        <a href="beasiswa.html"> Beasiswa</a>
+        <a href="pmb.html">PMB</a> 
+      </div>
+
+<!-- Hero Section -->
+<div class="container-fluid hero-section">
+    <div class="container">
+        <h1>Penerimaan Mahasiswa Baru</h1>
+        <p>Universitas AMIKOM Yogyakarta</p>
+        <p><strong>"Creative Economy Park"</strong></p>
+        <p>Gelombang 2: 26 April 2024 s/d 30 Juni 2024</p>
+        <a href="#" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+        <a href="#panduanContent" class="btn btn-outline-light btn-lg" id="panduanButton">Panduan PMB</a>
+    </div>
+</div>
+
+<!-- Konten Halaman -->
+<div class="container-fluid">
+    <h1 class="text-center my-4">Penerimaan Mahasiswa Baru (PMB)</h1>
+    <h3><p class="text-center">Selamat datang di halaman Penerimaan Mahasiswa Baru kampus kami. Di sini Anda bisa menemukan informasi lengkap mengenai proses pendaftaran, program studi, dan fasilitas kampus kami. </p></h3>
+
+
+
+    <!-- Panduan Pendaftaran -->
+    <div class="my-4" id="panduanContent">
+        <h1 class="text-center my-4">Panduan Pendaftaran</h1>
+        <img src="gambar6.jpg" class="img-fluid" alt="Panduan PMB" style="width: 100%;">
+        <h3><p>Untuk informasi lebih lanjut, silakan menghubungi bagian penerimaan mahasiswa baru di <a href="mailto:pmb@amikom.ac.id">pmb@amikom.ac.id</a> atau mengunjungi website kami.</p> </h3>         
+    </div>
+
+    <!-- Carousel -->
+      <!-- Fasilitas Kampus -->
+      <div class="my-4">
+        <h1 class="text-center my-4">Fasilitas Kampus</h1>
+        <ul>
+        <h3><p>Kampus kami dilengkapi dengan berbagai fasilitas untuk menunjang proses belajar mengajar:</p></h3>
+        </ul>
+ <div id="kampusCarousel" class="carousel slide my-5" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#kampusCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#kampusCarousel" data-slide-to="1"></li>
+        <li data-target="#kampusCarousel" data-slide-to="2"></li>
+        <li data-target="#kampusCarousel" data-slide-to="3"></li>
+        <li data-target="#kampusCarousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="gambar1.jpg" class="d-block w-100" alt="Gambar 1 ">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Gedung Utama Kampus</h5>
+                <p>Pemandangan gedung utama kampus kami.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="gambar2.jpg" class="d-block w-100" alt="Gambar 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lab Praktikum</h5>
+                <p>Fasilitas laboratorium dengan peralatan terkini.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="gambar3.jpg" class="d-block w-100" alt="Gambar 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ruang Cinema</h5>
+                <p>Ruang cinema yang nyaman dan mendukung</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="gambar4.jpg" class="d-block w-100" alt="Gambar 4">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Resource Center</h5>
+                <p>Perpustakaan dengan koleksi buku yang lengkap dan suasana yang kondusif.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="gambar5.jpg" class="d-block w-100" alt="Gambar 5">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>MSV Studio</h5>
+                <p>Japan Foundation mengundang Badan Usaha Milik Amikom, MSV Studio sebagai salah satu Perusahaan Animasi dari Asia Tenggara yang berpartisipasi dalam Japan Content Showcase (JCS) 2019.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#kampusCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#kampusCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+    <!-- Pilihan Jenjang Pendidikan -->
+    <div class="my-4">
+        <h1 class="text-center my-4">Fakultas dan Program Studi</h1>
+        <div id="accordionFaculties">
+            <!-- Fakultas Ilmu Komputer (FIK) -->
+            <div class="accordion-item">
+                <div class="card">
+                    <div class="card-header" id="headingIlmuKomputer" data-toggle="collapse" data-target="#collapseIlmuKomputer">
+                        <h2>Fakultas Ilmu Komputer (FIK)</h2>
+                    </div>
+                    <div id="collapseIlmuKomputer" class="collapse" aria-labelledby="headingIlmuKomputer" data-parent="#accordionFaculties">
+                        <div class="card-body">
+                            <ul>
+                                <li><h3>S1-Informatika</h3></li>
+                                <li><h3>S1-Sistem Informasi</h3></li>
+                                <li><h3>S1-Teknologi Informasi</h3></li>
+                                <li><h3>S1-Teknik Komputer</h3></li>
+                                <li><h3>D3-Teknik Informatika</h3></li>
+                                <li><h3>D3-Manajemen Informatika</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fakultas Ekonomi dan Sosial (FES)-->
+            <div class="accordion-item">
+                <div class="card">
+                    <div class="card-header" id="headingEkonomiSosial" data-toggle="collapse" data-target="#collapseEkonomiSosial">
+                        <h2>Fakultas Ekonomi dan Sosial (FES)</h2>
+                    </div>
+                    <div id="collapseEkonomiSosial" class="collapse" aria-labelledby="headingEkonomiSosial" data-parent="#accordionFaculties">
+                        <div class="card-body">
+                            <ul>
+                                <li><h3>S1-Ekonomi</h3></li>
+                                <li><h3>S1-Kewirausahaan</h3></li>
+                                <li><h3>S1-Akuntansi</h3></li>
+                                <li><h3>S1-Ilmu Komunikasi</h3></li>
+                                <li><h3>S1-Hubungan Internasional</h3></li>
+                                <li><h3>S1-Ilmu Pemerintahan</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fakultas Sains dan Teknologi (FST) -->
+            <div class="accordion-item">
+                <div class="card">
+                    <div class="card-header" id="headingSainsTeknologi" data-toggle="collapse" data-target="#collapseSainsTeknologi">
+                        <h2>Fakultas Sains dan Teknologi (FST)
+                    </div>
+                    <div id="collapseSainsTeknologi" class="collapse" aria-labelledby="headingSainsTeknologi" data-parent="#accordionFaculties">
+                        <div class="card-body">
+                            <ul>
+                                <li><h3>S1-Arsitektur</h3></li>
+                                <li><h3>S1-Perencanaan Wilayah & Kota</h3></li>
+                                <li><h3>S1-Geografi</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kelas Internasional Universitas Amikom -->
+            <div class="accordion-item">
+                <div class="card">
+                    <div class="card-header" id="headingKelasInternasional" data-toggle="collapse" data-target="#collapseKelasInternasional">
+                       <h2>Kelas Internasional Universitas Amikom</h2>
+                    </div>
+                    <div id="collapseKelasInternasional" class="collapse" aria-labelledby="headingKelasInternasional" data-parent="#accordionFaculties">
+                        <div class="card-body">
+                            <ul>
+                                <li><h3>Bachelor Informatics</h3></li>
+                                <li><h3>Bachelor Information Technology</h3></li>
+                                <li><h3>Bachelor Information System</h3></li>
+                                <li><h3>Bachelor Of Communication Science</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kelas Magister Universitas Amikom -->
+            <div class="accordion-item">
+                <div class="card">
+                    <div class="card-header" id="headingKelasInternasional" data-toggle="collapse" data-target="#collapseKelasInternasional">
+                        <h2>Kelas Magister Universitas Amikom</h2>
+                    </div>
+                    <div id="collapseKelasInternasional" class="collapse" aria-labelledby="headingKelasInternasional" data-parent="#accordionFaculties">
+                        <div class="card-body">
+                            <ul>
+                                <p><h2>Program Pascasarjana (S2)</h2></p>
+                                <li><h3>S2-Informatika</h3></li>
+                                <li><h3>S2-PJJ Informatika</h3></li>
+
+                                <p><h2>Program Doctoral (S3)</h2></p>
+                                <li><h3>S3-Informatika</h3></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-top">
+          <div class="footer-content">
+            <div class="footer-section contact-info">
+              <img
+                src="yu.png"
+                alt="Logo Amikom Kecil"
+                width="250px"
+                height="90px"
+              />
+              <h4>Diselenggarakan oleh</h4>
+              <p>Yayasan Amikom Yogyakarta</p>
+              <p>
+                Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur, Kec. Depok,
+                Kab. Sleman, Prop. Daerah Istimewa Yogyakarta 55283
+              </p>
+              <p>Email: Yayasan@amikom.ac.id</p>
+              <p>Email: amikom@amikom.ac.id</p>
+              <p>Telp: (0274) 884201 – 207</p>
+              <p>Fax: (0274) 884208</p>
+            </div>
+            <div class="footer-section international-office">
+              <h4>INTERNATIONAL OFFICE</h4>
+              <p>Email: io@amikom.ac.id</p>
+              <p>Telp: +62 274884 201 Ext. 612</p>
+              <p>Fax: +62 274884 208</p>
+            </div>
+            <div class="footer-section links">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="pmb.html">Pendaftaran</a></li>
+                <li><a href="profil.html">Profil Amikom</a></li>
+                <li><a href="auth.html">Login</a></li>
+                <li><a href="dosen.html">Dosen</a></li>
+                <li><a href="elearning.html">E-Learning</a></li>
+                <li><a href="wisuda.html">Wisuda</a></li>
+                <li><a href="repository.html">Repository</a></li>
+              </ul>
+            </div>
+            <div class="footer-section social-media">
+              <h4>Follow Us</h4>
+              <a
+                href="https://www.facebook.com/share/FhpEHiUoZT3N8gZc/?mibextid=LQQJ4d"
+              >
+                <img src="98.jpg" alt="Facebook" class="social-icon"
+              /></a>
+              <a href="https://twitter.com/amikomjogja">
+                <img
+                  src="TOPTEC - on Twitter.jpg"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+              <a href="https://www.instagram.com/amikomjogja">
+                <img src="76.jpg" alt="Instagram" class="social-icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCNMwEZ8Y3JIod-d22o8yxZQ?view_as=subscriber"
+              >
+                <img src="yt.jpg" alt="YouTube" class="social-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>UNIVERSITAS AMIKOM YOGYAKARTA</p>
+        </div>
+      </footer>
+    </body>
+  </html>  
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Script JavaScript untuk menampilkan/menyembunyikan panduan PMB -->
+<script>
+    document.getElementById('panduanButton').addEventListener('click', function() {
+        var panduanContent = document.getElementById('panduanContent');
+        panduanContent.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
+</body>
+</html>
